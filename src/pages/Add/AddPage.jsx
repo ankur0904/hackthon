@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import Header from "../../components/Header/Header";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./AddPage.css";
 
@@ -29,9 +31,28 @@ function AddPage() {
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />
-
-      <button onClick={handleClick}>Add</button>
-      <Link to="/">Home Page</Link>
+      <Box sx={{ "& button": { ml: 100, mt: 1 } }}>
+        <Button
+          style={{ color: "black", backgroundColor: "white" }}
+          sx={{ fontSize: 20 }}
+          variant="contained"
+          size="large"
+          onClick={handleClick}
+        >
+          Add
+        </Button>
+      </Box>
+      
+      <Box sx={{ "& button": { ml: 95, mt: 1 } }}>
+        <Button
+          style={{ color: "black", backgroundColor: "white" }}
+          sx={{ fontSize: 20 }}
+          variant="contained"
+          size="large"
+        >
+          <Link  to="/">Home Page</Link>
+        </Button>
+      </Box>
     </>
   );
 }
