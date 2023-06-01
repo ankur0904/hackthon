@@ -1,0 +1,20 @@
+.NotBackendBeforeBlogCard{
+    background-color: #ffffff;
+    height: 200px;
+    width: 1600px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px #030303;
+    float: left;
+    margin: 15px;
+}
+
+.NotBackendBeforeBlogCard-para{
+    font-weight: 400;
+    font-size: 24px;
+    margin-right: 16px;
+    margin-left: 16px;
+}
+
+.NotBackendBeforeBlogCard-link{
+    margin-left: 50%;
+}

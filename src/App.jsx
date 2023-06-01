@@ -4,7 +4,10 @@ import IndexPage from "./pages/Index/IndexPage";
 import ImplementationPage from "./pages/Implementation/ImplementationPage";
 import BackendBefore from "./pages/BackendBefore/BackendBefore";
 import NotBackendBefore from "./pages/NotBackendBefore/NotBackendBefore";
-import AddPage from "./pages/Add/AddPage";
+import AddPagev1 from "./pages/Add/v1/AddPagev1";
+import AddPagev2 from "./pages/Add/v2/AddPagev2";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+
 
 function App() {
   return (
@@ -14,8 +17,10 @@ function App() {
           <Route path="/notBackendBefore" element={<NotBackendBefore />} />
           <Route path="/backendBefore" element={<BackendBefore />} />
           <Route path="/implementation" element={<ImplementationPage />} />
-          <Route path="/add" element={<AddPage />} />
+          <Route path="/v1/add" element={<AddPagev1 />} />
+          <Route path="/v2/add" element={<AddPagev2 />} />
           <Route path="/" element={<IndexPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </BrowserRouter>
     </>

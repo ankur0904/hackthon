@@ -1,0 +1,27 @@
+.addPage-input1 {
+    border: 3px solid   rgb(124, 121, 122);
+    outline: none;
+    resize: none;
+    width: 800px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 3px;
+    background-color: white;
+    display: block;
+    margin-left: 25%;
+    margin-top: 25px;
+}
+
+.addPage-input2{
+    border: 3px solid   rgb(124, 121, 122);
+    outline: none;
+    width: 800px;
+    font-size: 25px;
+    border-radius: 5px;
+    margin-top: 3px;
+    background-color: white;
+    display: block;
+    margin-left: 25%;
+    margin-top: 25px;
+    resize: both;
+}

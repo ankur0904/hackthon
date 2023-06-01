@@ -41,7 +41,7 @@ function NotBackendBefore() {
           variant="contained"
           size="large"
         >
-          <a  href={"/add"}>Add</a>
+          <a  href={"/v1/add"}>Add</a>
         </Button>
       </Box>
     </>
