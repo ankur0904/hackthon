@@ -1,0 +1,24 @@
+.maincontent{
+    background-color: black;
+    height: 500px;
+}
+
+.maincontent-content{
+    padding-top: 142px;
+    padding-left: 20%;
+    /* position: relative; */
+}
+
+.maincontent-heading{
+    color: white;
+    padding-bottom: 22px;
+}
+
+.maincontent-list{
+    color: white;
+}
+
+.maincontent-list-item{
+    padding-top: 5px;
+    padding-bottom: 14px;
+}

@@ -1,0 +1,56 @@
+.mainContentNext{
+    background-color: black;
+    color: white;
+    height: 360px;
+}
+
+.mainContentNext-content{
+
+    /* position: absolute; */
+}
+
+.mainContentNext-cards-first{
+    display: block;
+    /* float: left; */
+    position: relative;
+    margin-left: 950px;
+}
+.mainContentNext-cards-first
+button{
+    margin-left: 30%;
+}
+
+.mainContentNext-cards-second{
+    display: block;
+    /* float: right; */
+    position: relative;
+    margin-left: 50px;
+}
+.mainContentNext-cards-second
+button{
+    margin-left: 75px;
+}
+
+.mainContentNext-cards-third{
+    display: block;
+    /* float: left; */
+    position: relative;
+    margin-left: 950px;
+}
+.mainContentNext-cards-third
+button{
+    margin-left: 20%;
+}
+
+.mainContentNext-cards-second,
+.mainContentNext-cards-second,
+.mainContentNext-cards-third{
+    padding-bottom: 30px;
+    padding-top: 15px;
+    /* position: absolute; */
+}
+
+#mainContentNext-button:hover{
+    color: white; 
+    background-color: black;  
+}
