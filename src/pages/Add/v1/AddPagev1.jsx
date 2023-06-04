@@ -4,13 +4,26 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./AddPage.css";
+import {
+  databases,
+  Database_ID_v1,
+  Collection_ID_v1,
+  randomID,
+} from "../../../config/config";
 
 function AddPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
   function handleClick() {
-    alert(content);
-    console.log(content);
+    const promise = databases.createDocument(
+      Database_ID_v1,
+      Collection_ID_v1,
+      randomID,
+      {
+        title: title,
+        content: content,
+      }
+    );
   }
 
   return (
@@ -42,7 +55,7 @@ function AddPage() {
           Add
         </Button>
       </Box>
-      
+
       <Box sx={{ "& button": { ml: 95, mt: 1 } }}>
         <Button
           style={{ color: "black", backgroundColor: "white" }}
@@ -50,7 +63,7 @@ function AddPage() {
           variant="contained"
           size="large"
         >
-          <Link  to="/">Home Page</Link>
+          <Link to="/">Home Page</Link>
         </Button>
       </Box>
     </>

@@ -1,16 +1,34 @@
-import React, { useState} from "react";
+import React, { useState } from "react";
 import Header from "../../../components/Header/Header";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./AddPage.css";
+import {
+  databases,
+  Database_ID_v2,
+  Collection_ID_v2,
+  randomID,
+} from "../../../config/config";
 
 function AddPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+
   function handleClick() {
-    alert(content);
-    console.log(content);
+    console.log(title, content);
+
+    const promise = databases.createDocument(Database_ID_v2, Collection_ID_v2, randomID, {
+        title: title,
+        content: content
+    });
+
+    promise.then(function (response) {
+        console.log(response); // Success
+        alert("Success")
+    }, function (error) {
+        console.log(error); // Failure
+    });
   }
 
   return (
@@ -42,7 +60,7 @@ function AddPage() {
           Add
         </Button>
       </Box>
-      
+
       <Box sx={{ "& button": { ml: 95, mt: 1 } }}>
         <Button
           style={{ color: "black", backgroundColor: "white" }}
@@ -50,7 +68,7 @@ function AddPage() {
           variant="contained"
           size="large"
         >
-          <Link  to="/">Home Page</Link>
+          <Link to="/">Home Page</Link>
         </Button>
       </Box>
     </>

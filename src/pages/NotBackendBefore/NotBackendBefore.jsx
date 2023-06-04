@@ -1,19 +1,27 @@
-import React from "react";
+import React,{useState, useEffect} from "react";
 import Header from "../../components/Header/Header";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import "./NotBackendBefore.css";
+import {databases,Database_ID_v1,Collection_ID_v1, randomID} from "../../config/config";
 
-var articles = [
-  {
-    title: "Never done backend",
-    content:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel quisquam unde ducimus animi saepe illum ullam sapiente mollitia? Eos rem, sunt odit consectetur enim earum doloribus veniam hic velit? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam vel quisquam unde ducimus animi saepe illum ullam sapiente mollitia? Eos rem, sunt odit consectetur enim earum doloribus veniam hic velit?",
-  },
-  { title: "Never  backend", content: "Learn it now" },
-];
+
+const promise = databases.listDocuments(Database_ID_v1, Collection_ID_v1);
 
 function NotBackendBefore() {
+  const [articles, setArticles] = useState([]);
+
+  useEffect(() => {
+      promise.then(
+        function (response) {
+          console.log(response.documents);
+          setArticles(response.documents);
+        },
+        function (error) {
+          console.log(error); // Failure
+        }
+      );
+  }, []);
   return (
     <>
       <Header />

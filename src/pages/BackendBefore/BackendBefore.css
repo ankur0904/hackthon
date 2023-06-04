@@ -1,7 +1,12 @@
+.NotBackendBeforeBlogCardParent{
+    width: 100%;
+}
+
 .NotBackendBeforeBlogCard{
     background-color: #ffffff;
     height: 200px;
-    width: 1600px;
+    width:100vw;  
+
     border-radius: 8px;
     box-shadow: 0 1px 3px #030303;
     float: left;
