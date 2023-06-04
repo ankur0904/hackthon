@@ -10,10 +10,14 @@ import {
   Collection_ID_v1,
   randomID,
 } from "../../../config/config";
+import Flash from "../../../components/Flash/Flash";
 
 function AddPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [flash, setFlash] = useState("");
+  const [flashTitle, setFlashTitle] = useState("Error :(");
+
   function handleClick() {
     const promise = databases.createDocument(
       Database_ID_v1,
@@ -22,6 +26,15 @@ function AddPage() {
       {
         title: title,
         content: content,
+      }
+    );
+    promise.then(
+      function (response) {
+        setFlash(true);
+        setFlashTitle("Success :)");
+      },
+      function (error) {
+        console.log(error);
       }
     );
   }
@@ -66,6 +79,7 @@ function AddPage() {
           <Link to="/">Home Page</Link>
         </Button>
       </Box>
+      {flash && <Flash flashTitle={flashTitle} />}
     </>
   );
 }

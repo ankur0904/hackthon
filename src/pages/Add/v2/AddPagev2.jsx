@@ -10,10 +10,13 @@ import {
   Collection_ID_v2,
   randomID,
 } from "../../../config/config";
+import Flash from "../../../components/Flash/Flash";
 
 function AddPage() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
+  const [flash, setFlash] = useState("");
+  const [flashTitle, setFlashTitle] = useState("Error :(");
 
   function handleClick() {
     console.log(title, content);
@@ -23,12 +26,15 @@ function AddPage() {
         content: content
     });
 
-    promise.then(function (response) {
-        console.log(response); // Success
-        alert("Success")
-    }, function (error) {
-        console.log(error); // Failure
-    });
+     promise.then(
+      function (response) {
+        setFlash(true);
+        setFlashTitle("Success :)");
+      },
+      function (error) {
+        console.log(error);
+      }
+    );
   }
 
   return (
@@ -71,6 +77,7 @@ function AddPage() {
           <Link to="/">Home Page</Link>
         </Button>
       </Box>
+      {flash && <Flash flashTitle={flashTitle} />}
     </>
   );
 }
