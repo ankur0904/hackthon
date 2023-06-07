@@ -1,7 +1,7 @@
-import { Client, Databases, ID } from "appwrite";
+import { Client, Databases, ID, Account } from "appwrite";
 
 const client = new Client();
-
+const account = new Account(client);
 const databases = new Databases(client);
 
 client
@@ -25,4 +25,4 @@ let randomID = ID.unique();
 //     console.log(error); // Failure
 // });
 
-export {databases,Database_ID_v1, Database_ID_v2, Collection_ID_v2,Collection_ID_v1, randomID};
+export {databases,Database_ID_v1, Database_ID_v2, Collection_ID_v2,Collection_ID_v1, randomID, account};

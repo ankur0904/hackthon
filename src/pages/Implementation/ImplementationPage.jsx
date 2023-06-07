@@ -7,13 +7,11 @@ function ImplementationPage() {
   return (
     <>
       <Header />
-      <div className="heading">
+      <div className="ImplementationPageHeading">
         <h1>OAuth implemented with Appwrite</h1>
       </div>
       <Cards image="img1" />
       <Cards image="img2" />
-      <Cards image="img3" />
-      <Cards image="img4" />
     </>
   );
 }

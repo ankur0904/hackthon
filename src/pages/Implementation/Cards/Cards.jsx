@@ -6,8 +6,8 @@ import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 
 import img1 from "./assets/1.jpg";
 import img2 from "./assets/2.jpg";
-import img3 from "./assets/3.jpg";
-import img4 from "./assets/4.jpg";
+import {googleAuth} from "../Auth/GoogleAuth/GoogleAuth";
+import { discordAuth } from "../Auth/DiscordAuth/DiscordAuth";
 
 function Cards(props) {
   console.log(props.image);
@@ -15,16 +15,10 @@ function Cards(props) {
   let icon;
   if (props.image === "img1") {
     imageNumber = img1;
-    icon = <GoogleIcon sx={{ fontSize: 60 }} className="icons" />;
+    icon = <GoogleIcon sx={{ fontSize: 60 }} className="icons" onClick={(e) => googleAuth(e)}/>;
   } else if (props.image === "img2") {
     imageNumber = img2;
-    icon = <FacebookRoundedIcon sx={{ fontSize: 60 }} className="icons" />;
-  } else if (props.image === "img3") {
-    imageNumber = img3;
-    icon = <FacebookRoundedIcon sx={{ fontSize: 60 }} className="icons" />;
-  } else if (props.image === "img4") {
-    imageNumber = img4;
-    icon = <FacebookRoundedIcon sx={{ fontSize: 60 }} className="icons" />;
+    icon = <FacebookRoundedIcon sx={{ fontSize: 60 }} className="icons" onClick={(e) => discordAuth(e)}/>;
   }
   return (
     <>
@@ -32,7 +26,7 @@ function Cards(props) {
         <img
           className="image"
           src={imageNumber}
-          alt="image"
+          alt="randomImage"
           height="320"
           width="400"
         />
