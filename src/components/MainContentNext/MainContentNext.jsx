@@ -2,14 +2,14 @@ import React from "react";
 import "./MainContentNext.css";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function MainContentNext() {
   const navigate = useNavigate();
-  function handleClickFirst(){
+  function handleClickFirst() {
     navigate("/notBackendBefore");
   }
-  function handleClickSecond(){
+  function handleClickSecond() {
     navigate("/backendBefore");
   }
   return (
@@ -31,7 +31,7 @@ function MainContentNext() {
                 variant="contained"
                 size="large"
               >
-                <a  href={"https://appwrite.io/docs/self-hosting"}>Install</a>
+                <a href={"https://appwrite.io/docs/self-hosting"}>Install</a>
               </Button>
             </Box>
           </div>

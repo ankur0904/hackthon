@@ -31,37 +31,39 @@ function NotBackendBefore() {
   return (
     <>
       <Header />
-      {isLoading ? <CircularLoader /> :       
-      <div>
-        <h1>Never Done Backend Before???</h1>
+      {isLoading ? (
+        <CircularLoader />
+      ) : (
+        <div>
+          <h1>Never Done Backend Before???</h1>
 
-        {articles.map((article) => (
-          <div className="NotBackendBeforeBlogCard" key={article.title}>
-            <h1>{article.title}</h1>
-            <p className="NotBackendBeforeBlogCard-para">
-              {article.content.substring(0, 125)}...
-            </p>
-            <a
-              className="NotBackendBeforeBlogCard-link"
-              href={`/articlesv1/${article.title}`}
+          {articles.map((article) => (
+            <div className="NotBackendBeforeBlogCard" key={article.title}>
+              <h1>{article.title}</h1>
+              <p className="NotBackendBeforeBlogCard-para">
+                {article.content.substring(0, 125)}...
+              </p>
+              <a
+                className="NotBackendBeforeBlogCard-link"
+                href={`/articlesv1/${article.title}`}
+              >
+                Read more
+              </a>
+            </div>
+          ))}
+
+          <Box sx={{ "& button": { ml: 100, mt: 1 } }}>
+            <Button
+              style={{ color: "black", backgroundColor: "#E6FFFD" }}
+              sx={{ fontSize: 20 }}
+              variant="contained"
+              size="large"
             >
-              Read more
-            </a>
-          </div>
-        ))}
-
-        <Box sx={{ "& button": { ml: 100, mt: 1 } }}>
-          <Button
-            style={{ color: "black", backgroundColor: "#E6FFFD" }}
-            sx={{ fontSize: 20 }}
-            variant="contained"
-            size="large"
-          >
-            <a href={"/v1/add"}>Add</a>
-          </Button>
-        </Box>
-      </div>}
-
+              <a href={"/v1/add"}>Add</a>
+            </Button>
+          </Box>
+        </div>
+      )}
     </>
   );
 }

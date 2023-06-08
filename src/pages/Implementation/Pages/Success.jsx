@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../../components/Header/Header";
-import "./implementationAuthPage.css"
+import "./implementationAuthPage.css";
 
 function Success(props) {
   return (

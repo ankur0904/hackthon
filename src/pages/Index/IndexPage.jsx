@@ -4,7 +4,6 @@ import MainContent from "../../components/MainContent/MainContent";
 import MainContentNext from "../../components/MainContentNext/MainContentNext";
 import Footer from "../../components/Footer/Footer";
 
-
 function IndexPage() {
   return (
     <>

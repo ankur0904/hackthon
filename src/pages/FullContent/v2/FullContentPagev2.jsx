@@ -15,7 +15,7 @@ function FullContentPagev2() {
   useEffect(() => {
     promise.then(
       function (response) {
-        const result = response.documents
+        const result = response.documents;
         for (let i = 0; i < result.length; i++) {
           const element = result[i];
           if (element.title === articleId) {

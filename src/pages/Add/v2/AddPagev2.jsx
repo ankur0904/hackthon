@@ -21,12 +21,17 @@ function AddPage() {
   function handleClick() {
     console.log(title, content);
 
-    const promise = databases.createDocument(Database_ID_v2, Collection_ID_v2, randomID, {
+    const promise = databases.createDocument(
+      Database_ID_v2,
+      Collection_ID_v2,
+      randomID,
+      {
         title: title,
-        content: content
-    });
+        content: content,
+      }
+    );
 
-     promise.then(
+    promise.then(
       function (response) {
         setFlash(true);
         setFlashTitle("Success :)");

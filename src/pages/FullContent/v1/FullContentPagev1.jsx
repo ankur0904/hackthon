@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import "./FullContentPagev1.css";
 import {
@@ -9,31 +9,26 @@ import {
 import Header from "../../../components/Header/Header";
 
 function FullContentPagev1() {
-
   const { articleId } = useParams();
-    // console.log(articleId);
+  // console.log(articleId);
   const promise = databases.listDocuments(Database_ID_v1, Collection_ID_v1);
   const [data, setData] = useState({});
   useEffect(() => {
     promise.then(
-    
-        function (response) {
-          const result = response.documents;
-        //   console.log();
-          const tmp = result[0];
-            // console.log(tmp);
-          for (let i = 0; i < result.length; i++) {
-            const element = result[i];
-            if (element.title === articleId) {
-              setData(result[i]);
-            }
+      function (response) {
+        const result = response.documents;
+        for (let i = 0; i < result.length; i++) {
+          const element = result[i];
+          if (element.title === articleId) {
+            setData(result[i]);
           }
-        },
-        function (error) {
-          console.log(error); // Failure
         }
-      );
-}, []);
+      },
+      function (error) {
+        console.log(error); // Failure
+      }
+    );
+  }, []);
 
   console.log(data);
   return (
