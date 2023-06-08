@@ -14,11 +14,13 @@ function Footer() {
       <div className="footer">
         <Box>
           <Button
+          
             style={{
               color: "black",
               backgroundColor: "white",
               marginTop: "100px",
-              marginLeft: "34%",
+              marginRight: "10%",
+              marginLeft: "10%"
             }}
             sx={{ fontSize: 20 }}
             variant="contained"

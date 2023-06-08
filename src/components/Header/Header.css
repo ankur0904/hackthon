@@ -1,25 +1,46 @@
-.header{
-    background-color: black;
-    height: 100px;
-    width: 100%;
+.header {
+  background-color: black;
+  height: 100px;
+  width: 100%;
 }
 
-.header-heading{
-    color: white;
-    margin-left: 40%;
-    position: relative;
-    display: inline-block;
-    padding-top: 46px;
+.header-heading {
+  color: white;
+  margin-left: 40%;
+  position: relative;
+  display: inline-block;
+  padding-top: 46px;
 }
 
-.header-button{
-    display: inline-block;
-    margin-left: 400px;
-    margin-top: 18px;
-    color: white;
+.header-button {
+  display: inline-block;
+  margin-left: 400px;
+  margin-top: 18px;
+  color: white;
 }
-.header-button:hover{
-    color: black;
-    background-color: white;
-    border-radius: 8px;
+.header-button:hover {
+  color: black;
+  background-color: white;
+  border-radius: 8px;
 }
+
+
+
+@media screen and (max-width: 425px) {
+  .header-heading {
+    margin-left: 25px;
+    padding-top: 20px;
+    font-size: 18px;
+  }
+
+  .header-button {
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-top: 8px;
+    float: right;
+    clear: both;
+    font-size: 14px;
+  }
+}
+
+

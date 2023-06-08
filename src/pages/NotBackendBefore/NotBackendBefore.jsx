@@ -52,7 +52,7 @@ function NotBackendBefore() {
             </div>
           ))}
 
-          <Box sx={{ "& button": { ml: 100, mt: 1 } }}>
+          <Box sx={{  }} className="notBackendBeforeButton">
             <Button
               style={{ color: "black", backgroundColor: "#E6FFFD" }}
               sx={{ fontSize: 20 }}

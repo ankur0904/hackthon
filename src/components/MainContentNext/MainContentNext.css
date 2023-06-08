@@ -1,56 +1,66 @@
-.mainContentNext{
-    background-color: black;
-    color: white;
-    height: 360px;
+.mainContentNext {
+  background-color: black;
+  color: white;
+  height: 360px;
 }
 
-.mainContentNext-content{
-
-    /* position: absolute; */
+.mainContentNext-cards-first {
+  display: block;
+  /* float: left; */
+  position: relative;
+  margin-left: 950px;
+}
+.mainContentNext-cards-first button {
+  margin-left: 30%;
 }
 
-.mainContentNext-cards-first{
-    display: block;
-    /* float: left; */
-    position: relative;
-    margin-left: 950px;
+.mainContentNext-cards-second {
+  display: block;
+  /* float: right; */
+  position: relative;
+  margin-left: 50px;
 }
-.mainContentNext-cards-first
-button{
-    margin-left: 30%;
-}
-
-.mainContentNext-cards-second{
-    display: block;
-    /* float: right; */
-    position: relative;
-    margin-left: 50px;
-}
-.mainContentNext-cards-second
-button{
-    margin-left: 75px;
+.mainContentNext-cards-second button {
+  margin-left: 75px;
 }
 
-.mainContentNext-cards-third{
-    display: block;
-    /* float: left; */
-    position: relative;
-    margin-left: 950px;
+.mainContentNext-cards-third {
+  display: block;
+  position: relative;
+  margin-left: 950px;
 }
-.mainContentNext-cards-third
-button{
-    margin-left: 20%;
+.mainContentNext-cards-third button {
+  margin-left: 20%;
 }
 
 .mainContentNext-cards-second,
 .mainContentNext-cards-second,
-.mainContentNext-cards-third{
-    padding-bottom: 30px;
-    padding-top: 15px;
-    /* position: absolute; */
+.mainContentNext-cards-third {
+  padding-bottom: 30px;
+  padding-top: 15px;
 }
 
-#mainContentNext-button:hover{
-    color: white; 
-    background-color: black;  
+#mainContentNext-button:hover {
+  color: white;
+  background-color: black;
 }
+@media screen and (max-width: 425px) {
+    .mainContentNext-cards-first,
+    .mainContentNext-cards-second,
+    .mainContentNext-cards-third {
+      margin: 0 auto;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .mainContentNext-cards-first button,
+    .mainContentNext-cards-second button,
+    .mainContentNext-cards-third button {
+      margin: 10px auto;
+      padding: 8px 16px;
+    }
+  }
+  
+  
+  
+  

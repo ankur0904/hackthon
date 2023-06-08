@@ -24,7 +24,7 @@ function MainContentNext() {
             </p>
             {/* <button>Install</button> */}
 
-            <Box sx={{ "& button": { m: 2 } }}>
+            <Box sx={{ "& button": { m: 2 } }} className="mainContentNextButtonFirst">
               <Button
                 style={{ color: "black", backgroundColor: "white" }}
                 sx={{ fontSize: 20 }}
@@ -39,7 +39,7 @@ function MainContentNext() {
             <p>
               Have you done backend <br /> before? If not go here.
             </p>
-            <Box sx={{ "& button": { m: 2 } }}>
+            <Box sx={{ "& button": { m: 2 } }} className="mainContentNextButton">
               <Button
                 style={{ color: "black", backgroundColor: "white" }}
                 sx={{ fontSize: 20 }}
@@ -55,8 +55,9 @@ function MainContentNext() {
             <p>
               Have you done backend <br /> before? If you done.
             </p>
-            <Box sx={{ "& button": { m: 2 } }}>
+            <Box sx={{ "& button": { m: 2 } }} className="mainContentNextButton">
               <Button
+              
                 style={{ color: "black", backgroundColor: "white" }}
                 sx={{ fontSize: 20 }}
                 variant="contained"

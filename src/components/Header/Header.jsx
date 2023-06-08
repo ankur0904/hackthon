@@ -14,7 +14,6 @@ function Header() {
         <h1 className="header-heading" onClick={handleClick}>
           Learn Appwrite
         </h1>
-
         <a href={"https://github.com/appwrite/appwrite"}>
           <GitHubIcon className="header-button" sx={{ fontSize: 60 }} />
         </a>

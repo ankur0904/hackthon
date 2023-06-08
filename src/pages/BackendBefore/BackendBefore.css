@@ -1,25 +1,48 @@
-.NotBackendBeforeBlogCardParent{
-    width: 100%;
-}
-
-.NotBackendBeforeBlogCard{
+.NotBackendBeforeBlogCard {
     background-color: #ffffff;
     height: 200px;
-    width:100vw;  
-
+    width: 1600px;
     border-radius: 8px;
     box-shadow: 0 1px 3px #030303;
     float: left;
     margin: 15px;
-}
-
-.NotBackendBeforeBlogCard-para{
+  }
+  .BackendBeforeButton {
+    text-align: center;
+    display: block;
+  }
+  .NotBackendBeforeBlogCard-para {
     font-weight: 400;
     font-size: 24px;
     margin-right: 16px;
     margin-left: 16px;
-}
-
-.NotBackendBeforeBlogCard-link{
+  }
+  
+  .NotBackendBeforeBlogCard-link {
     margin-left: 50%;
-}
+  }
+  
+  @media screen and (max-width: 425px) {
+    .NotBackendBeforeBlogCard {
+      width: 100%;
+      max-width: 425px;
+      margin-left: 10px;
+    }
+  
+    .NotBackendBeforeBlogCard-para {
+      font-size: 18px;
+    }
+  
+    .NotBackendBeforeBlogCard-link {
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .BackendBeforeButton {
+      text-align: center;
+    }
+  }
+  
