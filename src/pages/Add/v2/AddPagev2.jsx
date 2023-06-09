@@ -3,7 +3,7 @@ import Header from "../../../components/Header/Header";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
-import "./AddPage.css";
+import "./AddPage2.css";
 import {
   databases,
   Database_ID_v2,
@@ -44,7 +44,8 @@ function AddPage() {
 
   return (
     <>
-      <Header />
+    <div className="AddPage">
+    <Header />
       <h1>Contribute to our blogs...</h1>
       <textarea
         className="addPage-input1"
@@ -60,7 +61,7 @@ function AddPage() {
         value={content}
         onChange={(e) => setContent(e.target.value)}
       />
-      <Box sx={{ "& button": { ml: 100, mt: 1 } }}>
+      <Box sx={{ "& button": { m: 2 } }} className="addPageButton1">
         <Button
           style={{ color: "black", backgroundColor: "white" }}
           sx={{ fontSize: 20 }}
@@ -72,7 +73,7 @@ function AddPage() {
         </Button>
       </Box>
 
-      <Box sx={{ "& button": { ml: 95, mt: 1 } }}>
+      <Box sx={{ "& button": { m: 2 } }} className="addPageButton2">
         <Button
           style={{ color: "black", backgroundColor: "white" }}
           sx={{ fontSize: 20 }}
@@ -83,6 +84,8 @@ function AddPage() {
         </Button>
       </Box>
       {flash && <Flash flashTitle={flashTitle} />}
+    </div>
+
     </>
   );
 }

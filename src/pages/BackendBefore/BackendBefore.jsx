@@ -55,7 +55,7 @@ function BackendBefore() {
               </a>
             </div>
           ))}
-          <Box sx={{  }} className="BackendBeforeButton">
+          <Box sx={{ }} className="BackendBeforeButton">
             <Button
               style={{ color: "black", backgroundColor: "#E6FFFD" }}
               sx={{ fontSize: 20 }}

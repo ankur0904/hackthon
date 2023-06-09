@@ -1,26 +1,33 @@
-
-
 .cards {
   background-color: #ffffff;
   height: 400px;
   width: 400px;
   border-radius: 8px;
   box-shadow: 0 1px 3px #030303;
-  float: left;
   margin: 15px;
-  margin: 60px;
 }
 
-.image{
+.image {
   border-radius: 8px;
 }
 
-.cards-icons{
+.cards-icons {
   text-align: center;
   height: 20px;
 }
 
-.icons-discord{
+.icons-discord {
   border-radius: 8px;
   font-size: 4em;
+}
+
+@media screen and (max-width: 425px) {
+  .cards {
+    height: 400px;
+    width: 300px;
+    margin: 40px;
+  }
+  .image{
+    width: 100%;
+  }
 }

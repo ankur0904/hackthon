@@ -8,7 +8,6 @@ import { googleAuth } from "../Auth/GoogleAuth/GoogleAuth";
 import { discordAuth } from "../Auth/DiscordAuth/DiscordAuth";
 
 function Cards(props) {
-  console.log(props.image);
   let imageNumber;
   let icon;
   if (props.image === "img1") {

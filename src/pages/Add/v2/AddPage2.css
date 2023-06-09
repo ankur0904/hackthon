@@ -25,3 +25,19 @@
     margin-top: 25px;
     resize: both;
 }
+
+@media screen and (max-width: 425px) {
+    .AddPage .addPage-input1,
+    .AddPage .addPage-input2 {
+      width: 80%;
+      margin: 25px;
+    }
+    .addPageButton1 {
+      margin: 10px 41px;
+      padding: 8px 75px;
+    }
+    .addPageButton2 {
+      margin: 5px auto;
+      padding: 8px 75px;
+    }
+  }

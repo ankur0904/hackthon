@@ -1,0 +1,50 @@
+.addPage-input1 {
+  border: 3px solid rgb(124, 121, 122);
+  outline: none;
+  resize: none;
+  width: 800px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-top: 3px;
+  background-color: white;
+  display: block;
+  margin-left: 25%;
+  margin-top: 25px;
+}
+
+.addPage-input2 {
+  border: 3px solid rgb(124, 121, 122);
+  outline: none;
+  width: 800px;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-top: 3px;
+  background-color: white;
+  display: block;
+  margin-left: 25%;
+  margin-top: 25px;
+  resize: both;
+}
+
+.addPageButton1 {
+  margin-left: 780px;
+}
+.addPageButton2 {
+  margin-left: 740px;
+}
+
+@media screen and (max-width: 425px) {
+  .AddPage .addPage-input1,
+  .AddPage .addPage-input2 {
+    width: 90%;
+    margin: 25px;
+  }
+  .addPageButton1 {
+    margin: 10px 41px;
+    padding: 8px 75px;
+  }
+  .addPageButton2 {
+    margin: 5px auto;
+    padding: 8px 75px;
+  }
+}
