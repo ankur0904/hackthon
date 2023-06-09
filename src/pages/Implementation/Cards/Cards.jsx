@@ -1,7 +1,6 @@
 import React from "react";
 import "./Cards.css";
 import GoogleIcon from "@mui/icons-material/Google";
-import "https://kit.fontawesome.com/6d8c4bc4fd.js";
 import img1 from "./assets/1.jpg";
 import img2 from "./assets/2.jpg";
 import { googleAuth } from "../Auth/GoogleAuth/GoogleAuth";
