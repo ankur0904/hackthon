@@ -5,6 +5,7 @@
   border-radius: 8px;
   box-shadow: 0 1px 3px #030303;
   margin: 15px;
+  float: left;
 }
 
 .image {
@@ -26,6 +27,7 @@
     height: 400px;
     width: 300px;
     margin: 40px;
+    float: none;
   }
   .image{
     width: 100%;
