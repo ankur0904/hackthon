@@ -1,5 +1,4 @@
 import { Client, Databases, ID, Account } from "appwrite";
-// require('dotenv').config();
 const client = new Client();
 const account = new Account(client);
 const databases = new Databases(client);

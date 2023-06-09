@@ -27,6 +27,7 @@ function FullContentPagev2() {
         console.log(error); // Failure
       }
     );
+    // eslint-disable-next-line
   }, []);
   return (
     <>

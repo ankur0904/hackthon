@@ -28,6 +28,7 @@ function FullContentPagev1() {
         console.log(error); // Failure
       }
     );
+    // eslint-disable-next-line
   }, []);
 
   console.log(data);
