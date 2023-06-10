@@ -45,7 +45,7 @@ function BackendBefore() {
             >
               <h1>{article.title}</h1>
               <p className="NotBackendBeforeBlogCard-para">
-                {article.content.substring(0, 90)}...
+                {article.content.substring(0, 120)}...
               </p>
               <a
                 className="NotBackendBeforeBlogCard-link"
