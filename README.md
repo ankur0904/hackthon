@@ -1,71 +1,72 @@
-# Getting Started with Create React App
+# Learn Appwrite: [Appwrite](https://appwrite.io) [Hashnode](https://hashnode.com) Hackathon
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Team Details
 
-## Available Scripts
+<!---
+Mention all team members, including yourself, in the following format
+-->
 
-In the project directory, you can run:
+- Name of Team Member - Github Username - @ankur0904<br />
+  Hashnode Username - https://hashnode.com/@ankur136
 
-### `npm start`
+## Description of Project
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!--- Add the description of your project in this section -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### My project contains curated resources for the developer who wants to learn about Appwrite. This is really a good place for beginners. Because in this project we have two sections means, we have divided the content of blogs into two sections in which the first one is for those who know any backend framework and the second one is for those who don't know about any of the backend frameworks.
 
-### `npm test`
+Anyone interested in contributing to our blogs can contribute simply by some clicks this makes the project more powerful because the blogs are maintained by the open-source community.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tech Stack
 
-### `npm run build`
+<!---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Add the tech stack of your project in the following format:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Svelte
+- Appwrite Cloud
+    - Authentication
+    - Database
+    - Cloud Functions - Node.js
+- Vercel
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Make sure to mention which Appwrite services you have used and how each service helped you build the project.
 
-### `npm run eject`
+-->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Tech stack behind the project
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- React.JS - A popular fronted-end library that allows us to write the code in Javascript.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Appwrite - Appwrite is an open-source backend server that abstracts the complexity of common, complex, and repetitive tasks required for building a modern app.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Vercel - Vercel is a cloud platform for front-end developers.
 
-## Learn More
+- MUI - A user interface library for React that provides ready-to-use components and styling.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Font Awesome - A library of scalable vector icons used for enhancing the visual elements of the project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How Appwrite helped you build this project?
 
-### Code Splitting
+- Appwrite Databases - Appwrite databases are simple, secure, and scalable. And it is very easy to use in our web application. I used the databases to store the content of the blog and fetch it as the user goes to the webpage.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Appwrite Authentication - Leveraging Appwrite's authentication capabilities, various OAuth integrations were implemented in the web application, enhancing the user experience.
 
-### Analyzing the Bundle Size
+## Challenges We Faced
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<!--- Mentions what challenges you faced in the development process and how you overcame those -->
 
-### Making a Progressive Web App
+One of the most challenging tasks during the development process was working on the CSS part of the code. This task often required a significant amount of time to fix bugs and ensure the desired styling. To overcome this challenge, various strategies were employed. Watching YouTube tutorials and researching solutions on the internet proved to be valuable resources in finding solutions to CSS bugs and improving the overall styling of the project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Public Code Repo
 
-### Advanced Configuration
+https://github.com/ankur0904/hackthon
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<!--- Add a link to a public code repo in this section -->
 
-### Deployment
+## Demo Link
+https://www.youtube.com/watch?v=IPVE8YFVySU
+<!--- Add a link to the demo recording of your project in this section -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# hackthon
+## Hashnode Blog
+https://ankurblog.hashnode.dev/learn-appwrite-appwrite-hashnode-hackthon-project
