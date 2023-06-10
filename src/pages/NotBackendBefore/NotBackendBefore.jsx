@@ -41,7 +41,7 @@ function NotBackendBefore() {
             <div className="NotBackendBeforeBlogCard" key={article.title}>
               <h1>{article.title}</h1>
               <p className="NotBackendBeforeBlogCard-para">
-                {article.content.substring(0, 125)}...
+                {article.content.ing(0, 90)}...
               </p>
               <a
                 className="NotBackendBeforeBlogCard-link"
