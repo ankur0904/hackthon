@@ -30,9 +30,11 @@
     }
   
     .NotBackendBeforeBlogCard-para {
-      font-size: 18px;
+      font-size: 15px;
     }
-  
+    h1{
+      font-size: 24px;
+    }
     .NotBackendBeforeBlogCard-link {
       margin-left: auto;
       margin-right: auto;

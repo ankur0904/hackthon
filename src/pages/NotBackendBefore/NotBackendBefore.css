@@ -27,9 +27,11 @@
     margin: 15px 0;
     max-width: 425px;
   }
-
+  h1{
+    font-size: 24px;
+  }
   .NotBackendBeforeBlogCard-para {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .NotBackendBeforeBlogCard-link {
