@@ -14,7 +14,7 @@ function NotFoundPage() {
       >
         I think you should contribute to my project...
       </p>
-      <a style={{ marginLeft: "46%" }} href="https://www.github.com/ankur0904">
+      <a style={{ marginLeft: "46%" }} href="https://github.com/ankur0904/hackthon">
         Project
       </a>
     </>

@@ -4,8 +4,8 @@ function discordAuth(e) {
   e.preventDefault();
   account.createOAuth2Session(
     "discord",
-    "http://localhost:3000/implementation/success",
-    "http://localhost:3000/implementation/failure"
+    "https://appwrite-cloud-hackthon.vercel.app/implementation/success",
+    "https://appwrite-cloud-hackthon.vercel.app/implementation/failure"
   );
 }
 

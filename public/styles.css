@@ -1,0 +1,61 @@
+* {
+  font-family: "Noto Serif", serif !important;
+}
+
+/* Body Text */
+body {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 36px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  /* Subheadings */
+  h4 {
+    font-size: 20px;
+  }
+  
+  /* Paragraphs */
+  p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  
+
+@media screen and (max-width: 425px) {
+  body {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+}

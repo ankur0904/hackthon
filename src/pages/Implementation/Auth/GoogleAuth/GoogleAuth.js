@@ -4,8 +4,8 @@ function googleAuth(e) {
   e.preventDefault();
   account.createOAuth2Session(
     "google",
-    "http://localhost:3000/implementation/success",
-    "http://localhost:3000/implementation/failure"
+    "https://appwrite-cloud-hackthon.vercel.app/implementation/success",
+    "https://appwrite-cloud-hackthon.vercel.app/implementation/failure"
   );
 }
 
