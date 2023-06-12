@@ -6,8 +6,9 @@
 Mention all team members, including yourself, in the following format
 -->
 
-- Name of Team Member - Github Username - @ankur0904<br />
-  Hashnode Username - https://hashnode.com/@ankur136
+- Name of Team Member 
+  1. Hashnode Username - https://hashnode.com/@ankur136 Github Username - @ankur0904 
+  
 
 ## Description of Project
 
